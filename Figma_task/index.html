@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping Cart - Nakul Siwach</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favi.png">
+  </head>
+
+  <body>
+    <div class="fullbody">
+
+      <div class="header">
+        <div class="burger">
+          <img src="images\icon-menu.svg" alt="">
+        </div>
+        <img src="images/sneakers 2.svg" alt="">
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <img class="cart-icon1" id="cart-icon" src="images/Group 14.svg" alt="cart_icon">
+        <p id="cart-count">0</p>
+        <a href="#"><img class="profile" src="images/Oval.svg" alt="oval"></a>
+      </div>
+
+      <div class="cart-card" id="cart-card" >
+        <h5>Cart</h5>
+        <hr>
+        <div class="aaa1" id="aaa1" >
+          <div class="info">
+            <img class="info-profile" src="images/Rectangle.svg" alt="">
+            <div class="info-main">
+              <p>Fall Limited Edition </p>
+              <p>$125.00 x <span id="times">0</span> <span id="product" >0</span> </p>
+            </div>
+            <img class="delete_icon" id="delete_icon" src="images/deletee.svg" alt="">
+          </div>
+
+          <button type="submit" name="button">Checkout</button>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="content">
+
+        <div class="content-left">
+          <div class="top-img">
+            <img src="images/Rectangle.svg" alt="">
+          </div>
+          <div class="bottom">
+            <a><img class="myBtn" src="images/Rectangle Copy.svg" alt=""></a>
+            <a><img class="myBtn" src="images/Rectangle Copy 2.svg" alt=""></a>
+            <a><img class="myBtn" src="images/Rectangle Copy 3.svg" alt=""></a>
+            <a><img class="myBtn" src="images/Rectangle Copy 4.svg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="content-right">
+          <h5>SNEAKER COMPANY</h5>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p style="color: #69707D;margin : 0; padding-top:0;" >These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+          <div class="price-curr">
+            <h2>$125.00 </h2>
+            <h4 class="percent">50%</h4>
+          </div>
+          <p style="color:#69707D;margin-top : 0; padding-top:0;" > <strike>$250.00</strike>  </p>
+
+          <div class="functions">
+
+            <div class="counter">
+
+              <div class="minuss" id="minuss" >
+                <img class="b1" src="images/minus.svg" alt="">
+              </div>
+
+              <p id="count"> 0 </p>
+
+              <div class="pluss" id="pluss" >
+                <img class="b2" src="images/plus.svg" alt="">
+              </div>
+
+            </div>
+
+            <div class="add-cart">
+              <button id="add-cart" type="button" name="AddCart"> <img src="images/Shape.svg" alt="cart_icon"><p>Add to cart</p></button>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <div class="burger-nav">
+      <img src="images/icon-close.svg" alt="">
+      <ul>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+
+    </div>
+
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="close">&times;</div>
+        <div class="modal-imgs">
+          <div class="slideshow-container">
+              <!-- Full-width images -->
+              <div class="mySlides fade">
+                <img style="height:400px;border-radius:5%;"  src="images\image-product-1.jpg" style="width:400px">
+              </div>
+
+              <div class="mySlides fade">
+                <img style="height:400px;border-radius:5%;"  src="images\image-product-2.jpg" style="width:400px">
+              </div>
+
+              <div class="mySlides fade">
+                <img style="height:400px;border-radius:5%;" src="images\image-product-3.jpg" style="width:400px">
+              </div>
+
+              <div class="mySlides fade">
+                <img style="height:400px;border-radius:5%;" src="images\image-product-4.jpg" style="width:400px">
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <div class="modal-sm-imgs">
+          <img class="dot" onclick="currentSlide(1)" src="images/Rectangle Copy.svg" alt="">
+          <img class="dot" onclick="currentSlide(2)" src="images/Rectangle Copy 2.svg" alt="">
+          <img class="dot" onclick="currentSlide(3)" src="images/Rectangle Copy 3.svg" alt="">
+          <img class="dot" onclick="currentSlide(4)" src="images/Rectangle Copy 4.svg" alt="">
+        </div>
+
+      </div>
+    </div>
+    <br>
+    <br>
+
+
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,365 @@
+.fullbody{
+  margin:0 10% 0 10%;
+  color: #1D2026;
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+}
+
+/* header */
+.header a{
+  text-decoration: none;
+  color: #69707D;
+}
+.header a:hover{
+  color: black;
+}
+.header{
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+}
+.header ul{
+  list-style: none;
+  display: flex;
+  text-align: left;
+  margin-left: 4%;
+
+}
+.header ul li{
+  color: #69707D;
+  margin-left: 7%;
+
+}
+.header p{
+  margin-right:5%;
+}
+.cart-icon1{
+  width:2%;
+  margin-left: auto;
+  cursor: pointer;
+}
+.cart-card{
+  margin-left:70%;
+  width: 30%;
+  background-color: white;
+  border-radius: 5px;
+  position:fixed;
+  padding: 20px;
+  padding-top: 0;
+  z-index: 1;
+}
+.hide{
+  display: none;
+}
+.cart-card hr{
+  height:0;
+}
+.info{
+  margin: 5% 0 5% 0;
+  display:flex;
+}
+.info-profile{
+  width:50px;
+}
+.info-main{
+  padding: 0 0 0 10px;
+  color:#69707D;
+}
+.info-main p{
+  line-height: 0.5;
+  font-size: 0.9em;
+}
+#product{
+  font-size: 1rem;
+  color: black;
+  font-weight:bolder;
+}
+.delete_icon{
+  margin-left: auto;
+  cursor: pointer;
+}
+.cart-card button{
+  width: 100%;
+  color: white;
+  border-color: white;
+  align-items:center;
+  background-color: #FF7E1B;
+  padding:10px 50px;
+  font-size: 1rem;
+  border-radius: 10px;
+  filter: drop-shadow(0px 1px 1px white);
+}
+
+#cart-count{
+  background-color: #FF7E1B;
+  color: white;
+  padding: 0 5px 0 5px;
+  border-radius: 10px;
+}
+.profile{
+  margin-left: auto;
+  border-radius: 5rem;
+  border: 2px solid #FF7E1B;
+  cursor: pointer;
+}
+
+.content{
+  margin: 5% 5% 0 5%;
+  display: flex;
+  justify-content: space-around;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.top-img img{
+  width: 450px;
+}
+.bottom{
+  text-align: center;
+  margin-top: 3%;
+}
+.bottom a{
+  margin: 2%;
+  cursor: pointer;
+}
+.bottom a:hover{
+  opacity: 50%;
+}
+
+.content-right{
+  width: 45%;
+  margin-top: 3%;
+}
+.content-right h5{
+  color: #FF7E1B;
+}
+.content-right h1{
+  font-size: 2.5rem;
+  font-weight:700;
+  text-align: left;
+}
+.percent{
+  color: #FF7E1B;
+  background-color:hsl(25, 100%, 94%);
+  border: 1px;
+  padding: 1%;
+  border-radius: 5px;
+  margin-left:5%;
+}
+.price-curr{
+  display: flex;
+}
+.functions{
+  display: flex;
+  height: 50px;
+}
+
+.counter{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background-color: #F6F8FD;
+}
+.counter p{
+  margin: auto;
+}
+.minuss{
+  margin-left: auto;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+.minuss img{
+  margin: auto;
+  vertical-align: middle;
+}
+.minuss:hover{
+  opacity: 50%;
+}
+.pluss{
+  margin-right: auto;
+  margin-bottom: 4%;
+  cursor: pointer;
+}
+.pluss img{
+  vertical-align:middle;
+}
+.pluss:hover{
+  opacity: 50%;
+}
+.add-cart{
+  margin-left: 5%;
+}
+
+.add-cart button{
+  color: white;
+  border-color: #FF7E1B;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background-color: #FF7E1B;
+  width: 200%;
+  font-size: 1rem;
+  border-radius: 10px;
+  filter: drop-shadow(0px 1px 1px white);
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+.burger-nav {
+  display: none;
+  width: 60%;
+  background-color: lightgray;
+  font-weight: bolder;
+}
+.burger-nav img{
+  cursor: pointer;
+}
+.burger-nav ul{
+  list-style: none;
+  margin-top: 50px;
+}
+.burger-nav ul li{
+  margin-top: 30px;
+}
+@media (min-width: 1000px){
+  .fullbody{
+  }
+}
+@media (max-width: 1000px) and (min-width: 300px){
+  .fullbody{padding-bottom: 20%;margin:0;}
+  .content {display: block;margin: 0;}
+  .content-right{width: auto;margin:5%;}
+  .content-right h1{font-size: 5rem;}
+  .price-curr{font-size: 2.5rem;}
+  .functions{margin-top: 5%;display: block;text-align: center;}
+  .counter{height: 250%;width: auto;}
+  .counter p{font-size: 3rem;}
+  .counter img{width: 300%;}
+  .add-cart{margin:auto;margin-top: 5%;}
+  .add-cart button{width:100%;font-size: 2.5rem;padding: 0;margin: 0;}
+  .add-cart button img{width: 8%;}
+  .top-img img{width:100%;}
+  .bottom{display:none}
+  .header ul{display: none;justify-content:space-around;}
+  .burger{display: block;padding: 4%;margin-top: 1%;}
+  .burger img{width: 320%;}
+  .abab{width: 40%;margin-left:5%}
+  .minuss{margin: auto;padding: 5%;}
+  .pluss{margin: auto;padding: 5%;}
+  .cart-icon1{width: 7%;}
+  #cart-count{font-size: 3rem;border-radius: 50%;padding: 0 1% 0 1.5%}
+  .profile{margin-right: 30px;width: 100%}
+  .cart-card{width: 100%;margin:auto;font-size: 3rem;}
+  .info-profile{width: 15%;}
+  .delete_icon{width: 5%;}
+  .aaa1 button{font-size: 3rem;border-radius: 15px;padding: 3% 0 3% 0}
+  #product{font-size: 4rem;}
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin:auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+.modal-imgs{
+  margin: auto;
+  text-align: center;
+}
+.modal-sm-imgs{
+  margin: auto;
+  text-align: center;
+}
+.modal-sm-imgs img{
+  padding: 1%;
+  cursor: pointer;
+}
+/* The Close Button */
+.close {
+  color: white;
+  margin-left: 80%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*carousel*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 1% 1.9% 1% 1.9%;
+  color: black;
+  background-color: white;
+  border-radius:50%;
+
+}
+.prev{
+  left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius:50%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: orange;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .5s;
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
